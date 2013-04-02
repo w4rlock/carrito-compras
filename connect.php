@@ -7,7 +7,7 @@ if(!defined('INCLUDE_CHECK')) die('You are not allowed to execute this file dire
 
 $db_host		= 'localhost';
 $db_user		= 'root';
-$db_pass		= '514CKW4R33NCRIP74D0';
+$db_pass		= 'xxxxxxxxxx';
 $db_database	= 'CarritoCompras'; 
 
 /* End config */
