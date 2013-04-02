@@ -1,0 +1,70 @@
+<style type="text/css">
+#demo-header{
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+#login-link{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    background: #2a2a2a;
+    padding: 5px 15px 5px 15px;
+    color: #FFF;
+}
+#login-panel{
+    position: absolute;
+    top: 26px;
+    right: 0px;
+    width: 190px;
+	padding: 10px 15px 5px 15px;
+    background: #2a2a2a;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #FFF;
+    display: none;
+}
+label{
+    line-height: 1.8;
+}
+</style>
+<!-- Demo Scripts -->
+<script type="text/javascript" src="Jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#login-link").click(function(){
+        $("#login-panel").slideToggle(200);
+    })
+})
+$(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+        $("#login-panel").hide(0);
+    }
+});
+
+</script>
+<div id="demo-header">
+
+<a id="login-link" href="#login" title="Login"><span style="text-decoration: underline;"><b>Acceder</b></span></a>
+<div id="login-panel">
+    <form action="validar_user.php" name="frmLogin" method="post"> 
+    <p> 
+    <label>Username:
+    <input name="Username" type="text" value="" /> 
+    </label> <br /> 
+    <label>Password:
+    <input name="Password" type="password" value="" /> 
+    </label><br />
+
+    <!--input type="submit" name="submit" value="Login" /-->
+	<input type="image"  src="img/img/btn_SignUP.png" style="margin-top:7px" width="95" height="30">
+    <br>
+    <a href="register_user.php" style="margin-left:60px"><b>Registrarse</b></a>
+    </p> 
+    </form> 
+
+</div><!-- /login-panel -->
+</div><!-- /demoheader -->
+
+

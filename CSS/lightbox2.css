@@ -1,0 +1,17 @@
+.pic{
+	float:left;
+	background-position: center center;
+	padding:5px;
+	margin:0 15px 15px 0;
+	border:1px solid black;
+	width:140px;
+	height:140px;
+}
+
+.pic a{
+	width:140px;
+	height:140px;
+	text-indent:-99999px;
+	display:block;
+}
+

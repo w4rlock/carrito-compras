@@ -1,0 +1,7 @@
+.panel-overlay h2,
+.panel-overlay p{
+	margin: .3em 0;
+}
+.panel-overlay p {
+	line-height: 1.2em;
+}

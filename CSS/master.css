@@ -1,0 +1,133 @@
+/*
+ *body {
+ *color:#222;
+ *font-size:16px;
+ *font-family:helvetica, verdana, arial, san-serif;
+ *line-height:1.5em;
+ *}
+ *
+ *a {
+ *color:#06F;
+ *text-decoration:underline;
+ *}
+ *
+ *p {
+ *padding:10px 0;
+ *}
+ */
+
+#container {
+width:900px;
+margin:20px auto;
+}
+
+/*contact form*/
+#mask {
+background-color:#000;
+display:none;
+height:100%;
+left:0;
+position:absolute;
+top:0;
+width:100%;
+z-index:9000;
+}
+
+#contact {
+background-color:#222222;
+display:none;
+left:50%;
+margin-left:-300px;
+color:#FFFFFF;
+position:absolute;
+top:90px;
+width:600px;
+z-index:9999;
+border-radius:10px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+padding:20px;
+}
+
+#close {
+background:url(../images/close.png) no-repeat right;
+cursor:pointer;
+font-family:arial, sans-serif;
+font-size:15px;
+font-weight:700;
+line-height:24px;
+text-decoration:underline;
+text-align:right;
+padding:17px 30px 5px 5px;
+}
+
+#contact_header {
+background:url(../images/envelope.png) no-repeat left;
+font-family:arial, sans-serif;
+font-size:30px;
+font-weight:700;
+line-height:50px;
+padding:5px 5px 10px 60px;
+}
+
+/* form components */
+input,textarea {
+border:1px solid silver;
+background-color:#fff;
+color:#404040;
+font-size:10px;
+font-family:Verdana, Arial, sans-serif;
+text-transform:uppercase;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+margin:5px 0;
+padding:5px;
+}
+
+input:hover[type=text],input:focus[type=text],textarea:hover,textarea:focus {
+/*
+ *background-color:#E0E0E0;
+ */
+background-color:#FFFFFF;
+border:1px solid #000;
+}
+
+input[type=text],textarea {
+width:300px;
+}
+
+#submit {
+border:none;
+width:87px;
+height:41px;
+background-image:url(../images/submit.png);
+margin-top:20px;
+}
+
+#submit:hover {
+cursor:pointer;
+}
+
+/* alert messages */
+.success,.error {
+color:#000;
+display:none;
+font-size:15px;
+font-weight:700;
+border-radius:4px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+padding:5px 10px 5px 10px;
+margin-bottom: 10px;
+}
+
+.success {
+background-color:#9F6;
+border:1px solid #0F0;
+}
+
+.error {
+background-color:#F66;
+border:1px solid red;
+}

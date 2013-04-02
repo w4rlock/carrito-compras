@@ -1,0 +1,98 @@
+/*body { 
+		font-family: Arial, Helvetica, sans-serif; 
+		line-height: 1.5;
+		color: #fff;
+		width: 770px;
+		margin: 0 auto;
+		padding: 50px;
+	}*/
+	/*h1,h2 { 
+		color: #77AFC7 !important;
+		margin-bottom: 0;
+		line-height: 1.2em;
+	}
+	p {
+		margin-top: 0;
+	}
+	a {
+		color: #aaa;
+	}*/
+a:hover {
+		color: #FA5858 !important;
+	}
+code { 
+		background-color: #100;
+		padding: 0.2em 0.5em;
+		display: inline-block;
+	}
+#wrapper { 
+		overflow: hidden;
+	}
+.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: #000;
+		opacity: 0.65;
+		-moz-opacity: 0.65;
+		filter:alpha(opacity=65);
+	}
+.container {
+	position: relative;
+	float: left;
+	vertical-align:top;
+	margin-bottom:20px;
+	}
+.content{
+	position: relative; /* Fixes the z-index */
+	float: right;
+	}
+#column-1 {
+	width: 100%;
+	padding-bottom:20px;
+	valign:top;
+	/*width: 900px;				
+	margin:10px;
+    padding-left:1em;
+    padding-right:1em;*/	}
+#column-2 {
+	width: 250px;
+	margin-left: 20px;
+	float: left;
+	display: inline;
+}
+#column-1 .content {
+	padding: 5px;
+	margin:170px 320px 250px 360px;
+	/*width: 760px;
+    padding-left:1em;
+    padding-right:1em;*/
+}
+#column-2 .content {
+	padding: 10px;
+	width: 230px;
+}
+#product{
+	border:1px solid #F5F5F5;
+	float:left;
+	margin:10px;
+	padding:20px;
+	text-align:right;
+    /*
+	 *text-decoration:blink;
+     */
+}
+
+#border{ border: 2px solid #666699;
+		 margin: 5px;
+	     position: relative;
+		 float: left;
+		 padding: 15px
+		 }
+
+
+	/* Let's compensate for IE6's inability to interpret top: 0; and bottom: 0; */
+	* html #column-1 .overlay { height: expression(document.getElementById("column-1").offsetHeight); }
+	* html #column-2 .overlay { height: expression(document.getElementById("column-2").offsetHeight); }

@@ -1,0 +1,31 @@
+#demo-header{
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+#login-link{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    background: #5F04B4;
+    padding: 5px 15px 5px 15px;
+	margin-right:5px;
+    color: #ffffff;
+}
+#login-panel{
+    position: absolute;
+    top: 26px;
+    right: 0px;
+    width: 190px;
+    padding: 10px 15px 5px 15px;
+    background: #5F04B4;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #dddaec;
+    display: none;
+	z-index:50000;
+}
+label{
+    line-height: 1.8;
+}
